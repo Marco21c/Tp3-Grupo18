@@ -8,6 +8,7 @@ public class Tp3Grupo18Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Tp3Grupo18Application.class, args);
+		
 	}
 
 }
