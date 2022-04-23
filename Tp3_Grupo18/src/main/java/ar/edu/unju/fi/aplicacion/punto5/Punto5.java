@@ -18,8 +18,8 @@ public class Punto5 {
 	 a++;
 	 }
      
-	 for(int i=0;i<arreglo.length;i++) {
-      System.out.println(arreglo[i]);	 
+	 for(char i:arreglo) {
+      System.out.println(i);	 
       }
 	
 	}
