@@ -11,14 +11,16 @@ public class Punto5 {
      String cadena = entrada.nextLine(); 
      
      char[] arreglo = new char[cadena.length()];
-     
-     for(int i=0;i<arreglo.length;i++) {
-	 arreglo[i]= cadena.charAt(i);
+    
+     int a=0;	
+     for(int i=arreglo.length-1;i>=0;i--) {
+	 arreglo[i]= cadena.charAt(a);
+	 a++;
 	 }
      
-	 for(int i=arreglo.length-1;i>=0;i--) {
-		 	System.out.println(arreglo[i]);
-	 }
+	 for(int i=0;i<arreglo.length;i++) {
+      System.out.println(arreglo[i]);	 
+      }
 	
 	}
 
