@@ -13,7 +13,7 @@ public class Principal {
           
           do {
            Scanner entrada = new Scanner(System.in);	
-           menu.m();
+           menu.mostrarMenu();
            opc = entrada.nextInt();  
            switch(opc) {
            case 1:
