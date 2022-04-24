@@ -9,7 +9,7 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<Alumno> lista = new ArrayList();
-		Alumno nuevoAlumno = new Alumno();
+		
 		Scanner scanner = new Scanner(System.in);
 		int num;
 		String resp;
@@ -27,6 +27,7 @@ public class Principal {
 		
 		switch (num) {
 		case 1:
+			Alumno nuevoAlumno = new Alumno();
 			System.out.println("ingrese nombre ");
 			String n = scanner.next();
 			nuevoAlumno.setNombre(n);
@@ -41,9 +42,9 @@ public class Principal {
 			for (int i=0; i<nuevoAlumno.getNota().length;i++) {
 				nuevoAlumno.getNota()[i] = scanner.nextDouble();
 			}
-			int acum = 0;
-			lista.add(acum, nuevoAlumno);
-			acum = acum + 1;
+			
+			lista.add(nuevoAlumno);
+			
 			break;
 		case 2:
 			System.out.println("ingrese libreta universitaria");
@@ -88,7 +89,7 @@ public class Principal {
 			System.out.println("salir");
 			band = false;
 		default:
-			System.out.println("opcion no valida, vuelva ingresar");
+			System.out.println("fin del programa");
 		}
 		
 	}
