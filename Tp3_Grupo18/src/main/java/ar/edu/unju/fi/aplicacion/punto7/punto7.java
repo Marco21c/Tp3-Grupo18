@@ -1,6 +1,7 @@
 package ar.edu.unju.fi.aplicacion.punto7;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class punto7 {
@@ -32,9 +33,12 @@ public class punto7 {
     	   System.out.println("Debe ingresar un indice valido.");
       
      Scanner indice = new Scanner(System.in);
-   	 System.out.println("Ingrese un indice para eliminar: ");
+   	 try {
+     System.out.println("Ingrese un indice para eliminar: ");
    	 eliminado = indice.nextInt();
-     
+   	 }catch(InputMismatchException e) {
+   	     System.out.println("Debe ingresar un valor numerico.");
+   	 }
      }while(eliminado<0 || eliminado>=lista.size());
      //Eliminacion de string en el indice indicado
    	 System.out.println("Se elimino " + lista.get(eliminado) );
