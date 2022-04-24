@@ -10,8 +10,13 @@ public class Punto4 {
     
     for(int i=0;i<arreglo.length;i++) {
     	Scanner entrada = new Scanner(System.in);
+    	try {
     	System.out.println("Ingrese un numero: ");
     	arreglo[i]= entrada.nextInt();
+    	}catch(java.util.InputMismatchException e) {
+    		i--;
+    		System.out.println("Debe ingresar un valor numerico.");
+    	}
     }
     for(int i:arreglo){
      String aux;	
