@@ -69,7 +69,6 @@ public class Principal {
 				}
 				
 			}
-			System.out.println("el LU no existe");
 			break;
 		case 4:
 			for (Alumno al: lista) {
