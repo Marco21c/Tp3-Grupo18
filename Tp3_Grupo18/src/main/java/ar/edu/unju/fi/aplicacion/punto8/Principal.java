@@ -62,15 +62,14 @@ public class Principal {
 			for (int i=0; i<lista.size();i++) {
 				Alumno am = lista.get(i);
 				if (am.getLU().equals(resp)) {
-					for (int j=0;j<am.getLU().length();j++) {
+					for (int j=0;j<am.getNota().length;j++) {
 						System.out.println("ingrese las notas");
 						am.getNota()[j]=scanner.nextDouble();
 					}
 				}
-				else {
-					System.out.println("no existe alumno con LU ingresado");
-				}
+				
 			}
+			System.out.println("el LU no existe");
 			break;
 		case 4:
 			for (Alumno al: lista) {
